@@ -1,0 +1,31 @@
+%nav.navbar.navbar-fixed-side{ class: "navbar-#{theme}" }
+  .container
+    .navbar-header
+      %button.navbar-toggle{ data: { toggle: 'collapse', target: '.navbar-collapse' } }
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'BS3 Side Navbar', 'index.html', class: 'navbar-brand'
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li{ class: "#{'active' if theme == :default}" }
+          = link_to 'Default Theme', 'index.html'
+        %li{ class: "#{'active' if theme == :inverse}" }
+          = link_to 'Inverse Theme', 'inverse.html'
+        = bootstrap_nav_dropdown 'Dropdown' do
+          %li= link_to 'Sub-page 1', '#'
+          %li= link_to 'Sub-page 2', '#'
+          %li.divider
+          %li.dropdown-header Dropdown Header
+          %li= link_to 'Sub-page 3', '#'
+      %form.navbar-form.navbar-left
+        .form-group
+          %input.form-control{ placeholder: 'Search' }
+        %button.btn.btn-default Search
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'Page 4', '#'
+      %button.btn.btn-default.navbar-btn Button
+      %p.navbar-text
+        Made by
+        = link_to 'Sam Rayner', 'http://www.samrayner.com'
