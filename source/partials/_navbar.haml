@@ -10,9 +10,9 @@
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li{ class: "#{'active' if theme == :default}" }
-          = link_to 'Default Theme', 'index.html'
+          = link_to 'Left (Default Theme)', 'index.html'
         %li{ class: "#{'active' if theme == :inverse}" }
-          = link_to 'Inverse Theme', 'inverse.html'
+          = link_to 'Right (Inverse Theme)', 'inverse.html'
         = bootstrap_nav_dropdown 'Dropdown' do
           %li= link_to 'Sub-page 1', '#'
           %li= link_to 'Sub-page 2', '#'

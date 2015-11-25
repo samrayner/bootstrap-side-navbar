@@ -6,12 +6,25 @@ Responsive sidebar navigation using [default BS3 navbar markup](http://getbootst
 
 ## Installation
 
+## Sass
+
 Download [navbar-fixed-side.scss](https://raw.githubusercontent.com/samrayner/bootstrap-side-navbar/source/source/assets/stylesheets/navbar-fixed-side.scss)
 
 Include it after Bootstrap in your Sass file:
 
     @import 'bootstrap';
     @import 'navbar-fixed-side';
+
+## CSS
+
+Download the minified [navbar-fixed-side.css](https://raw.githubusercontent.com/samrayner/bootstrap-side-navbar/gh-pages/assets/stylesheets/navbar-fixed-side.css)
+
+Include it after Bootstrap in your HTML:
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/navbar-fixed-side.css" rel="stylesheet" />
+
+---
 
 ## Usage
 
