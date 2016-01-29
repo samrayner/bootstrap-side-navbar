@@ -1,6 +1,9 @@
-# Side Navbar for Bootstrap 3
+<img src="http://samrayner.github.io/bootstrap-side-navbar/assets/images/bs3-side-navbar.png" width="80" alt="Icon" /> Side Navbar for Bootstrap 3
+------
 
 Responsive sidebar navigation using [default BS3 navbar markup](http://getbootstrap.com/components/#navbar)
+
+Sponsored by [Terracoding](http://www.terracoding.com/)
 
 ## [Check out the demo](http://samrayner.github.io/bootstrap-side-navbar)
 
