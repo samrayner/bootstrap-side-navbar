@@ -27,6 +27,10 @@ Include it after Bootstrap in your HTML:
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/navbar-fixed-side.css" rel="stylesheet" />
 
+## Bower
+
+`bower install bootstrap-side-navbar`
+
 ---
 
 ## Usage
