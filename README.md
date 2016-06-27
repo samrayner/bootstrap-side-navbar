@@ -53,6 +53,7 @@ Then just use `.navbar-fixed-side` as you would [usually use `.navbar-fixed-top`
         </div>
         <div class="col-sm-9 col-lg-10">
           <!-- your page content -->
+        </div>
       </div>
     </div>
 
@@ -68,6 +69,7 @@ Use Bootstrap's [column ordering][co] to maintain source order
         </div>
         <div class="col-sm-9 col-lg-10 col-sm-pull-3 col-lg-pull-2">
           <!-- your page content -->
+        </div>
       </div>
     </div>
 
