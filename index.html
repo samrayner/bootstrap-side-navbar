@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Bootstrap 3 Side Navbar</title>
+    <link href="assets/stylesheets/application.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-lg-2">
+          <nav class="navbar navbar-default navbar-fixed-side">
+            <div class="container">
+              <div class="navbar-header">
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./">BS3 Side Navbar</a>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active">
+                    <a href="./">Left (Default Theme)</a>
+                  </li>
+                  <li class="">
+                    <a href="inverse.html">Right (Inverse Theme)</a>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="#">Sub-page 1</a></li>
+                  <li><a href="#">Sub-page 2</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Dropdown Header</li>
+                  <li><a href="#">Sub-page 3</a></li>
+                  </ul></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input class="form-control" placeholder="Search">
+                  </div>
+                  <button class="btn btn-default">Search</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Page 4</a></li>
+                </ul>
+                <button class="btn btn-default navbar-btn">Button</button>
+                <p class="navbar-text">
+                  Made by
+                  <a href="http://www.samrayner.com">Sam Rayner</a>
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-sm-9 col-lg-10">
+          <div id="content">
+            <h1>
+              <img height="80" src="assets/images/bs3-side-navbar.png" />
+              Side Navbar for Bootstrap 3
+              <br>
+              <small>
+                Responsive sidebar navigation using
+                <a href="http://getbootstrap.com/components/#navbar">default Bootstrap 3 navbar markup</a>
+              </small>
+            </h1>
+            <h4>Sponsored by <a href="http://www.terracoding.com">Terracoding</a></h4>
+            <h2 id="installation">Installation</h2>
+            
+            <h2 id="sass">Sass</h2>
+            
+            <p>Download <a href="https://raw.githubusercontent.com/samrayner/bootstrap-side-navbar/source/source/assets/stylesheets/navbar-fixed-side.scss">navbar-fixed-side.scss</a></p>
+            
+            <p>Include it after Bootstrap in your Sass file:</p>
+            
+            <pre><code>@import 'bootstrap';&#x000A;@import 'navbar-fixed-side';&#x000A;</code></pre>
+            
+            <h2 id="css">CSS</h2>
+            
+            <p>Download the minified <a href="https://raw.githubusercontent.com/samrayner/bootstrap-side-navbar/gh-pages/assets/stylesheets/navbar-fixed-side.css">navbar-fixed-side.css</a></p>
+            
+            <p>Include it after Bootstrap in your HTML:</p>
+            
+            <pre><code>&lt;link href="css/bootstrap.min.css" rel="stylesheet" /&gt;&#x000A;&lt;link href="css/navbar-fixed-side.css" rel="stylesheet" /&gt;&#x000A;</code></pre>
+            
+            <h2 id="bower">Bower</h2>
+            
+            <p><code>bower install bootstrap-side-navbar</code></p>
+            
+            <hr />
+            
+            <h2 id="usage">Usage</h2>
+            
+            <p>Position the navbar using the standard Bootstrap grid system in a <code>.container-fluid</code>.</p>
+            
+            <p>This gives you control over how wide it is and when it should collapse.</p>
+            
+            <p>Then just use <code>.navbar-fixed-side</code> as you would <a href="http://getbootstrap.com/components/#navbar-fixed-top">usually use <code>.navbar-fixed-top</code></a>.</p>
+            
+            <h3 id="examples">Examples</h3>
+            
+            <h4 id="left-hand-side">Left-hand side</h4>
+            <pre><code>&lt;div class="container-fluid"&gt;&#x000A;  &lt;div class="row"&gt;&#x000A;    &lt;div class="col-sm-3 col-lg-2"&gt;&#x000A;      &lt;nav class="navbar navbar-default navbar-fixed-side"&gt;&#x000A;        &lt;!-- normal collapsible navbar markup --&gt;&#x000A;      &lt;/nav&gt;&#x000A;    &lt;/div&gt;&#x000A;    &lt;div class="col-sm-9 col-lg-10"&gt;&#x000A;      &lt;!-- your page content --&gt;&#x000A;    &lt;/div&gt;&#x000A;  &lt;/div&gt;&#x000A;&lt;/div&gt;&#x000A;</code></pre>
+            
+            <h4 id="right-hand-side">Right-hand side</h4>
+            <p>Use Bootstrap's <a href="https://getbootstrap.com/css/#grid-column-ordering">column ordering</a> to maintain source order</p>
+            
+            <pre><code>&lt;div class="container-fluid"&gt;&#x000A;  &lt;div class="row"&gt;&#x000A;    &lt;div class="col-sm-3 col-lg-2 col-sm-push-9 col-lg-push-10"&gt;&#x000A;      &lt;nav class="navbar navbar-default navbar-fixed-side"&gt;&#x000A;        &lt;!-- normal collapsable navbar markup --&gt;&#x000A;      &lt;/nav&gt;&#x000A;    &lt;/div&gt;&#x000A;    &lt;div class="col-sm-9 col-lg-10 col-sm-pull-3 col-lg-pull-2"&gt;&#x000A;      &lt;!-- your page content --&gt;&#x000A;    &lt;/div&gt;&#x000A;  &lt;/div&gt;&#x000A;&lt;/div&gt;&#x000A;</code></pre>
+            
+            <h3 id="options">Options</h3>
+            
+            <p>The side navbar supports the inverse style for navbars. Replace <code>.navbar-default</code> with <code>.navbar-inverse</code> as normal.</p>
+            <a class="github-ribbon" href="https://github.com/samrayner/bootstrap-side-navbar"><img alt="Fork me on Github" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascripts/application.js"></script>
+  </body>
+</html>
